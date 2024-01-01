@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <style>
+        /* Adicione estilos básicos aqui. Exemplo: */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f8fa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #24292e;
+            padding: 1em 0;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        footer {
+            background-color: #24292e;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        /* Personalize mais conforme necessário */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>{{ site.title }}</h1>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            {{ content }}
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            © {{ site.time | date: '%Y' }} {{ site.title }}. Todos os direitos reservados.
+        </div>
+    </footer>
+</body>
+</html>

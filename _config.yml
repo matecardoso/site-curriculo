@@ -1,0 +1,6 @@
+title: Meu Site Jekyll
+email: seu-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Escreva aqui uma descrição para o seu site.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
